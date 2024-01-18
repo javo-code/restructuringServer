@@ -1,8 +1,8 @@
 import express from 'express';
 import morgan from 'morgan';
-import MainRouter from './routes/index.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { initMongoDB } from './config/connection.js';
+import MainRouter from './routes/index.js';
 const mainRouter = new MainRouter();
 import 'dotenv/config';
 
